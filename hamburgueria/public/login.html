@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Hamburgueria — Entrar</title><link rel="stylesheet" href="/css/style.css"></head>
+<body class="login-body">
+<main class="login-card">
+  <div class="logo">🍔</div>
+  <h1>Hamburgueria</h1>
+  <p class="muted" id="sub">Entre para acessar o sistema</p>
+  <div class="tabs" id="tabs"><button type="button" class="tab on" data-tipo="func">Funcionário</button><button type="button" class="tab" data-tipo="admin">Administrador</button></div>
+  <form id="f" autocomplete="on">
+    <div id="setup-name" hidden><label>Seu nome<input id="name" autocomplete="name"></label></div>
+    <label><span id="ulabel">Usuário ou e-mail</span><input id="username" autocomplete="username" required autofocus></label>
+    <label>Senha<input id="password" type="password" autocomplete="current-password" required></label>
+    <div class="err" id="err" role="alert"></div>
+    <button class="btn pri big" id="go">Entrar</button>
+  </form>
+</main>
+<script src="/js/login.js"></script>
+</body></html>
